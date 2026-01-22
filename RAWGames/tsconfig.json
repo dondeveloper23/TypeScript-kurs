@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    /* Osnovna podešavanja */
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "moduleResolution": "node",
+    "outDir": "./dist",
+
+    /* Strogoća (Ovde TS postaje tvoj najbolji drug) */
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

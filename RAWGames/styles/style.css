@@ -1,0 +1,170 @@
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --accent: #38bdf8;
+    --accent-hover: #0ea5e9;
+    --text: #f1f5f9;
+    --danger: #ef4444;
+    --border: #334155;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#app {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: var(--accent);
+    margin-bottom: 40px;
+}
+
+#search-wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px; /* Smanjen margin zbog sekcije ispod */
+}
+
+/* Stilizovanje inputa i selecta */
+input, select, button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: var(--accent);
+}
+
+button {
+    background: var(--accent);
+    color: var(--bg-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+}
+
+button:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+}
+
+/* SEKCIJA ZA SAČUVANE PRETRAGE */
+#saved-searches-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-top: 1px solid var(--border);
+}
+
+/* INDIVIDUALNA STAVKA (Card) */
+.saved-search-item {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 10px 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+}
+
+.saved-search-item:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.15);
+}
+
+.saved-search-item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.saved-search-item strong {
+    color: var(--accent);
+}
+
+/* Dugmići unutar sačuvane stavke */
+.btn-search-trigger {
+    padding: 6px 12px;
+    font-size: 12px;
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+}
+
+.btn-search-trigger:hover {
+    background: var(--accent);
+    color: var(--bg-color);
+}
+
+.btn-delete {
+    padding: 6px 10px;
+    font-size: 12px;
+    background: transparent;
+    color: #64748b;
+    border: 1px solid #64748b;
+}
+
+.btn-delete:hover {
+    background: var(--danger);
+    color: white;
+    border-color: var(--danger);
+}
+
+/* GLAVNI GRID IGARA */
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* KARTICA IGRE */
+.game-wrapper {
+    background: var(--card-bg);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.game-wrapper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.game-wrapper img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.game-wrapper h2 {
+    padding: 15px 15px 5px;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.game-wrapper span {
+    padding: 0 15px 15px;
+    display: inline-block;
+    color: var(--accent);
+    font-weight: bold;
+}

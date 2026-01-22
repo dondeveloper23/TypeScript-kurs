@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAWGames Explorer</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<div id="app">
+    <h1>RAWGames - Games Search APP</h1>
+    <div id="search-wrapper">
+        <input type="text" id="search-name" placeholder="Enter Game Name Here...">
+        <select id="genre-select">
+            <option value="">Select Genre</option>
+        </select>
+        <button id="search-button">Search</button>
+        <button id="save-search-button">Save This Search</button>
+    </div>
+    <div id="saved-searches-div"></div>
+    <div id="game-container"></div>
+</div>
+
+<script src="dist/bundle.js" defer></script>
+</body>
+</html>

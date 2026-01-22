@@ -1,0 +1,1 @@
+{"version":3,"file":"ApiSuccessInterface.d.ts","sourceRoot":"","sources":["../../src/interfaces/ApiSuccessInterface.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAC,oBAAoB,EAAC,MAAM,wBAAwB,CAAC;AAEjE,MAAM,WAAW,mBAAmB;IAChC,QAAQ,EAAE,MAAM,CAAC;IACjB,MAAM,EAAE,oBAAoB,EAAE,CAAC;IAC/B,YAAY,EAAE,MAAM,CAAA;CACvB"}
